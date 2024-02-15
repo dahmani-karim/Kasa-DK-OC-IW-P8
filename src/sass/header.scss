@@ -1,0 +1,13 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: red;
+    ul {
+        display: flex;
+        flex-direction: row;
+    }
+    li {
+        list-style: none;
+    }
+}
