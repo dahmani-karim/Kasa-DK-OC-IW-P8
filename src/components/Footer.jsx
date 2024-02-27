@@ -1,4 +1,4 @@
-import React from 'react';
+// Code: Footer component
 
 const Footer = () => {
     return (
