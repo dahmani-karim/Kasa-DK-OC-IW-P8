@@ -1,9 +1,11 @@
 //About Page
 
+import aboutBanner from '../assets/img/aboutBanner.png';
+
 const About = () => {
     return (
-        <div>
-            <h1>ABOUT PAGE</h1>
+        <div className='about'>
+            <img src={aboutBanner} alt="Photo de montagnes" />
         </div>
     );
 };
