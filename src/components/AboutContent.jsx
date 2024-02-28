@@ -1,23 +1,27 @@
 // Content of the About page
 
-import aboutContent from '../data/about.json';
+import PropTypes from 'prop-types';
 
-const AboutContent = () => {
+const AboutContent = ({ about }) => {
     return (
         <div className="content">
-            <ul>
-            <li>Fiabilité</li>
-            <li>Respect</li>
-            <li>Service</li>
-            <li>Sécurité</li>
-            </ul>
-            {aboutContent.map((aboutContent, index) => (
-                <div key={index} title={aboutContent.title}>
-                {aboutContent.text}
+            {about.map((about) => (
+                <div key={about.id}>
+                    <h2>{about.title}</h2>
+                    <p>{about.text}</p>
                 </div>
             ))}
         </div>
     );
+};
+
+AboutContent.propTypes = {
+    about: PropTypes.arrayOf(
+        PropTypes.shape({
+          title: PropTypes.string.isRequired,
+          text: PropTypes.string.isRequired,
+        })
+      ).isRequired,
 };
 
 export default AboutContent;

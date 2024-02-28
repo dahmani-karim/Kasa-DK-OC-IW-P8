@@ -2,12 +2,13 @@
 
 import BannerAbout from "../components/BannerAbout";
 import AboutContent from "../components/AboutContent";
+import about from '../data/about.json';
 
 const About = () => {
     return (
         <div>
             <BannerAbout />
-            <AboutContent />
+            <AboutContent about={about}/>
         </div>
     );
 };
