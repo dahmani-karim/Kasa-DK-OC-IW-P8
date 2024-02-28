@@ -1,4 +1,4 @@
-// Code: Footer component
+//Footer component
 
 import { Link } from 'react-router-dom';
 

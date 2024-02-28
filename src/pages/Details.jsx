@@ -3,7 +3,20 @@
 const Details = () => {
     return (
         <div>
-            <h1>DESCRIPTION PAGE</h1>
+            <p>caroussel</p>
+            <ul>
+                <li>Titre</li>
+                <li>Propriétaire</li>
+            </ul>
+            <p>lieu</p>
+            <ul>
+                <li>tags</li>
+                <li>stars</li>
+            </ul>
+            <ul>
+                <li>Description</li>
+                <li>Equipements</li>
+            </ul>
         </div>
     );
 };

@@ -1,11 +1,13 @@
 //About Page
 
-import aboutBanner from '../assets/img/aboutBanner.png';
+import BannerAbout from "../components/BannerAbout";
+import AboutContent from "../components/AboutContent";
 
 const About = () => {
     return (
-        <div className='about'>
-            <img src={aboutBanner} alt="Photo de montagnes" />
+        <div>
+            <BannerAbout />
+            <AboutContent />
         </div>
     );
 };

@@ -1,9 +1,8 @@
-.header {
+.header{
     padding: 50px 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    color: red;
     ul {
         display: flex;
         flex-direction: row;
@@ -11,5 +10,9 @@
             margin-right: 10px;
             list-style: none;
         }
+    }
+    a {
+        text-decoration: none;
+        color: black;
     }
 }
