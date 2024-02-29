@@ -1,22 +1,23 @@
 //Details of lodging
 
+//import Carrousel from "../components/Carrousel";
+import Tags from "../components/Tags";
+import Infos from "../components/Infos";
+import Rate from "../components/Rate";
+
 const Details = () => {
     return (
-        <div>
-            <p>caroussel</p>
-            <ul>
-                <li>Titre</li>
-                <li>Propriétaire</li>
-            </ul>
-            <p>lieu</p>
-            <ul>
-                <li>tags</li>
-                <li>stars</li>
-            </ul>
-            <ul>
-                <li>Description</li>
-                <li>Equipements</li>
-            </ul>
+        <div className="details">
+            {/* <Carrousel /> */}
+            <Infos />
+            <div className="InfosSupp">
+                <Tags />
+                <Rate />
+            </div>
+            <div>
+                <p>Description</p>
+                <p>Equipements</p>
+            </div>
         </div>
     );
 };

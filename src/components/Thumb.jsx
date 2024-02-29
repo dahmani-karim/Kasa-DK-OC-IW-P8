@@ -9,6 +9,7 @@ const Thumb = ({ logements }) => {
             {logements.map((logements) => (
                 <div key={`routePaths${logements.id}`} className="thumb">
                     <NavLink to={`/details/${logements.id}`}>
+                        <layer className='overlay'></layer>
                         <img src={logements.cover} alt={`${logements.title}`} />
                         <h2 key={`${logements.id}`}>{logements.title}</h2>
                     </NavLink>

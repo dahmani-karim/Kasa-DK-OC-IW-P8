@@ -23,12 +23,21 @@
             margin: 10px 0;
         }
     }
-    h2 {
-        font-size: 24px;
-        font-weight: 700;
+    .collapse {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
         background-color: #FF6060;
         border-radius: 5px;
-        padding: 10px 20px 10px 15px;
+        padding: 0px 15px;
         color: white;
+        h2 {
+            font-size: 24px;
+            font-weight: 700;
+            width: 100%;
+        }
+        img {
+            transform: rotate(180deg);
+        }
     }
 }
