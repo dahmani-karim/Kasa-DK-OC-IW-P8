@@ -1,4 +1,5 @@
 {
+  "homepage": "https://dahmani-karim.github.io/Kasa-DK-OC-IW-P8/",
   "name": "p8---cr-ez-une-application-web-de-location-immobili-re-avec-react",
   "private": true,
   "version": "0.0.0",
@@ -8,7 +9,8 @@
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "deploy": "npm run build && gh-pages -d dist"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "gh-pages": "^6.1.1",
