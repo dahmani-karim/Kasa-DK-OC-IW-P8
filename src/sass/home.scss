@@ -1,5 +1,4 @@
 .homeBanner {
-    padding: 0px 50px;
     position : relative;
     text-align: center;
     img {
@@ -22,7 +21,6 @@
 }
 
 .gallery {
-    padding: 50px;
     .thumbs {
         display: grid;
         grid-template-columns: repeat(3, 1fr);

@@ -10,7 +10,7 @@
 }
 
 .content {
-    padding: 50px 50px;
+    padding: 50px 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -39,5 +39,13 @@
         img {
             transform: rotate(180deg);
         }
+    }
+    p{
+        font-size: 18px;
+        font-weight: 400;
+        margin-top: 0;
+        padding: 15px;
+        background-color: rgba(246, 246, 246, 1);
+        border-radius: 5px;
     }
 }
