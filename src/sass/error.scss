@@ -1,0 +1,20 @@
+.errorBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    img {
+        width: 30%;
+        height: auto;
+    }
+    h1 {
+        color: #FF6060;
+        font-size: 36px;
+    }
+    a {
+        color: black;
+        text-decoration: underline;
+        font-size: 18px;
+    }
+}

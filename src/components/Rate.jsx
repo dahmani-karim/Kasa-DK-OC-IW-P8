@@ -14,11 +14,11 @@ const Rate = () => {
     let starsEmpty = [];
 
     for (let index = 0; index < logement.rating; index++) {
-        starsFull.push(<img className="colorStars" key={index} src={starActive} alt="Full Star" />);
+        starsFull.push(<img className="colorStars" key={index} src={starActive} alt="Étoile pleine" />);
     }
 
     for (let index = 0; index < (totalStars - logement.rating); index++) {
-        starsEmpty.push(<img className="greyStars" key={index} src={starInactive} alt="Empty Star" />);
+        starsEmpty.push(<img className="greyStars" key={index} src={starInactive} alt="Étoile vide" />);
     }
 
     return (

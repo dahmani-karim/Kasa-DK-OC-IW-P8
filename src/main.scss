@@ -3,27 +3,19 @@
 @use "./sass/home.scss";
 @use "./sass/about.scss";
 @use "./sass/details.scss";
+@use "./sass/error.scss";
 
 html, body {
     font-family: 'Montserrat', sans-serif;
     margin: 0 auto;
-    padding: 0;
-    max-width: 1440px;    
+    max-width: 1440px;
     box-sizing: border-box;
     background-color: white;
 }
 
-h1 {
-    font-size: 48px;
-    font-weight: 700;
-}
-
-h2 {
-    font-size: 18px;
-    font-weight: 700;
-}
-
-p {
-    font-size: 24px;
-    font-weight: 500;
+#root {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
 }

@@ -1,6 +1,6 @@
 //Details of lodging
 
-//import Carrousel from "../components/Carrousel";
+import Carrousel from "../components/Carrousel";
 import Tags from "../components/Tags";
 import Infos from "../components/Infos";
 import Rate from "../components/Rate";
@@ -8,7 +8,7 @@ import Rate from "../components/Rate";
 const Details = () => {
     return (
         <div className="details">
-            {/* <Carrousel /> */}
+            <Carrousel />
             <Infos />
             <div className="InfosSupp">
                 <Tags />

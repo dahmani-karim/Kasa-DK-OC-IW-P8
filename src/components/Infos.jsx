@@ -1,5 +1,6 @@
 //Informations component for lodging in details pages
 
+// import PropTypes from 'prop-types';
 import { useParams } from 'react-router-dom';
 import logements from '../data/logements';
 
@@ -9,8 +10,8 @@ const Infos = () => {
     return (
         <div className="Infos">
             <div className="infosLeft">
-                <h2 className='detailTitle'>{logement.title}</h2>
-                <p className='detailLocation'>{logement.location}</p>
+                <h1 className='detailTitle'>{logement.title}</h1>
+                <h2 className='detailLocation'>{logement.location}</h2>
             </div>
             <div className="infosRight">
                 <p className='detailHost'>{logement.host.name}</p>
@@ -19,5 +20,15 @@ const Infos = () => {
         </div>
     );
 };
+
+// Infos.propTypes = {
+//     logements: PropTypes.arrayOf(
+//         PropTypes.shape({
+//           id: PropTypes.string.isRequired,
+//           title: PropTypes.string.isRequired,
+//           location: PropTypes.string.isRequired,
+//         })
+//       ).isRequired,
+// };
 
 export default Infos;
