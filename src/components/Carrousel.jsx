@@ -1,6 +1,6 @@
 // Carrousel for Details of lodging pages
 
-//import PropTypes from 'prop-types';
+import { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import logements from '../data/logements';
 import arrowLeft from '../assets/img/arrowLeft.svg';
@@ -13,40 +13,35 @@ const Carrousel = () => {
     const totalPictures = logement.pictures.length;
     
     let portfolio = [];
-    //const currentPicture = portfolio[0];
 
     for (let index = 0; index < totalPictures; index++) {
         portfolio.push(logement.pictures[index]);
     }
+    
+    const [indicator, setIndicator] = useState(1);
+
+    const slideLeft = () => {
+        //si l'index est égal à 0, on passe à la dernière slide
+        setIndicator((prevIndex) => (prevIndex === 1 ? totalPictures - 1 : prevIndex - 1));
+    };
+      
+    const slideRight = () => {
+        //si l'index est égal à la dernière slide, on passe à la première
+        setIndicator((prevIndex) => (prevIndex === totalPictures ? 1 : prevIndex + 1));
+    };
 
     return (
         <div className='carrousel' key={logement.id}>
             <div className="carrouselNav">
-                <img className='arrow arrowLeft' src={arrowLeft} alt="Flèche gauche" />
-                <img className='arrow arrowRight' src={arrowRight} alt="Flèche droite" />
+                <img className='arrow arrowLeft' src={arrowLeft} alt="Flèche gauche" onClick={slideLeft}/>
+                <img className='arrow arrowRight' src={arrowRight} alt="Flèche droite" onClick={slideRight}/>
             </div>
-            
-            {portfolio.map((picture, index) => (
-                <>
-                    <div className="slide-indicator">
-                        {`${index + 1}/${logement.pictures.length}`}
-                    </div>
-                    <img className='pictures' key={index} src={picture} alt="Photos du logement" />
-                </>
-            ))}
+            <div className="slide-indicator">
+                        {`${indicator}/${totalPictures}`}
+            </div>
+            <img className='pictures' src={portfolio[indicator-1]} alt="Photos du logement" />
         </div>
     );
 };
-
-/*
-Carrousel.propTypes = {
-    logements: PropTypes.arrayOf(
-        PropTypes.shape({
-            id: PropTypes.number.isRequired,
-            pictures: PropTypes.arrayOf(PropTypes.string.isRequired),
-        })
-    ).isRequired,
-};
-*/
 
 export default Carrousel;
