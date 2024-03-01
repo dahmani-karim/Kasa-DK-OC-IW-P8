@@ -22,12 +22,14 @@
             top: 50%;
             left: 0;
             translate: 0 -50%;
+            cursor: pointer;
         }
         .arrowRight{
             position: absolute;
             top: 50%;
             right: 0;
             translate: 0 -50%;
+            cursor: pointer;
         }
     }
 }
@@ -35,34 +37,36 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    .detailTitle{
+        font-size: 36px;
+        font-weight: 500;
+        color: #FF6060;
+    }
+    .detailLocation{
+    font-size: 18px;
+    font-weight: 500;
+    }
     .infosRight{
         display: flex;
         flex-direction: row;
+        align-items: center;
+    }
+    .detailHost{
+        font-size: 18px;
+        font-weight: 500;
+        width: 93px;
+        color: #FF6060;
+        text-wrap: wrap;
+        text-align: right;
+        margin-right: 10px;
+    }
+    .pictureHost{
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
     }
 }
-.detailTitle{
-    font-size: 36px;
-    font-weight: 500;
-    color: #FF6060;
-}
-.detailLocation{
-font-size: 18px;
-font-weight: 500;
-}
-.detailHost{
-    font-size: 18px;
-    font-weight: 500;
-    width: 93px;
-    color: #FF6060;
-    text-wrap: wrap;
-    text-align: right;
-    margin-right: 10px;
-}
-.pictureHost{
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
-}
+
 .InfosSupp{
     display: flex;
     flex-direction: row;
@@ -81,18 +85,36 @@ font-weight: 500;
             border-radius: 5px;
         }
     }
+    .rating{
+        display: flex;
+        flex-direction: row;
+        align-items: right;
+        img {
+            padding: 0 5px;
+        }
+        .greyStars{
+            color: #E0E0E0;
+        }
+        .colorStars{
+            color: #FF6060;
+        }
+    }
 }
-.rating{
+
+.services{
     display: flex;
     flex-direction: row;
-    align-items: right;
-    img {
-        padding: 0 5px;
-    }
-    .greyStars{
-        color: #E0E0E0;
-    }
-    .colorStars{
-        color: #FF6060;
+    justify-content: space-between;
+    margin: 0 50px;
+    p{
+        display: flex;
+        flex-direction: column;
+        background-color: #FF6060;
+        border-radius: 5px;
+        color: white;
+        font-size: 18px;
+        font-weight: 700;
+        width: 45%;
+        padding: 10px 10px;
     }
 }

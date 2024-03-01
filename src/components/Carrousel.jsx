@@ -22,7 +22,7 @@ const Carrousel = () => {
 
     const slideLeft = () => {
         //si l'index est égal à 0, on passe à la dernière slide
-        setIndicator((prevIndex) => (prevIndex === 1 ? totalPictures - 1 : prevIndex - 1));
+        setIndicator((prevIndex) => (prevIndex === 1 ? totalPictures : prevIndex - 1));
     };
       
     const slideRight = () => {
