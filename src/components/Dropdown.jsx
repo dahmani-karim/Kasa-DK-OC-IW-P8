@@ -1,25 +1,36 @@
 //Components Dropdown for collapsis zone in details page and about page
 
-/*import React, { useState } from 'react';
-import logements from './logements.json';
+import { useState } from 'react';
+import { useParams } from 'react-router-dom';
+import logements from '../data/logements';
 
-const CollapsibleZone = () => {
+
+const Dropdown = () => {
+    const { id } = useParams();
+    const logement = logements.find((logement) => logement.id === id);
+
     const [isOpen, setIsOpen] = useState(false);
 
-    const toggleCollapse = () => {
-        setIsOpen(!isOpen);
+    const toggleCollapse = (e) => {
+        e.target=setIsOpen(!isOpen);
     };
 
     return (
-        <div>
-            {logements.map((logement, index) => (
-                <div key={index}>
-                    <h3 onClick={toggleCollapse}>{logement.title}</h3>
-                    {isOpen && <p>{logement.content}</p>}
-                </div>
-            ))}
+        <div className='services'>
+            <div className='block1'>
+                <h3 onClick={(e)=>toggleCollapse(e)}>Description</h3>
+                {isOpen && <p className='service'>{logement.description}</p>}
+            </div>
+            <div className='block2'>
+                <h3 onClick={(e)=>toggleCollapse(e)}>Équipements</h3>
+                {logement.equipments.map((equipment, index) => (
+                    <div className='service' key={index}>
+                        {isOpen && <p key={index}>{equipment}</p>}
+                    </div>
+                ))}
+            </div>
         </div>
     );
 };
 
-export default CollapsibleZone;*/
+export default Dropdown;

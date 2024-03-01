@@ -105,8 +105,9 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 50px;
-    p{
+    margin: 0 50px 50px 50px;
+    gap: 100px;
+    h3{
         display: flex;
         flex-direction: column;
         background-color: #FF6060;
@@ -114,7 +115,23 @@
         color: white;
         font-size: 18px;
         font-weight: 700;
-        width: 45%;
-        padding: 10px 10px;
+        padding: 10px;
+        margin-bottom: 0;
+        cursor: pointer;
     }
+    .block1, .block2{
+        width: 50%;
+    }
+    .service{
+        margin: 0;
+        background-color: rgba(246, 246, 246, 1);
+        border-radius: 5px;
+    }
+    p{
+        font-size: 18px;
+        font-weight: 500;
+        margin:0;
+        padding: 10px;
+        //transform: translate(0px, -10px);
+    };
 }
