@@ -4,13 +4,14 @@
 @use "./sass/about.scss";
 @use "./sass/details.scss";
 @use "./sass/error.scss";
+@use "./sass/variables.scss";
 
 html, body {
     font-family: 'Montserrat', sans-serif;
     margin: 0 auto;
     max-width: 1440px;
     box-sizing: border-box;
-    background-color: white;
+    background-color: $bg-color;
 }
 
 #root {
