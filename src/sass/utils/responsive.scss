@@ -1,6 +1,22 @@
 @import "./variables.scss";
 
 @media (max-width: $medium) {
+    .header {
+        padding: 30px 30px;
+        .nav {
+            font-size: 12px;
+            ul {
+                li {
+                    margin: 0 10px;
+                }
+            }
+        }
+        img{
+            width: 145px;
+            height: auto;
+        }
+    }
+
     .homeBanner {
         img {
             height: 150px;
@@ -21,9 +37,27 @@
             }
         }
     }
+
+    .footer{
+        .mention {
+        font-size: 12px;
+        }
+    }
 }
 
 @media (min-width: $medium) and (max-width: $large) {
+    .header {
+        padding: 40px 40px;
+        .nav {
+            font-size: 22px;
+            ul {
+                li {
+                    margin: 0 15px;
+                }
+            }
+        }
+    }
+
     .homeBanner {
         img {
             height: 180px;
@@ -53,6 +87,18 @@
 }
 
 @media (min-width: $large) {
+    .header {
+        padding: 50px 50px;
+        .nav {
+            font-size: 24px;
+            ul {
+                li {
+                    margin: 0 20px;
+                }
+            }
+        }
+    }
+
     .homeBanner {
         img {
             height: 200px;
