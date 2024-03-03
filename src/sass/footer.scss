@@ -1,3 +1,5 @@
+@import "./utils/variables.scss";
+
 .footer {
     display: flex;
     flex-direction: column;
@@ -12,5 +14,13 @@
         font-size: 24px;
         font-weight: 500;
         color: white;
+    }
+}
+
+@media (max-width: $medium) {
+    .footer{
+        .mention {
+        font-size: 12px;
+        }
     }
 }

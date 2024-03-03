@@ -1,3 +1,5 @@
+@import "./utils/variables.scss";
+
 .homeBanner {
     position : relative;
     text-align: center;
@@ -21,13 +23,14 @@
 }
 
 .gallery {
+    margin: 50px 0;
     .thumbs {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 50px;
         padding: 50px;
         border-radius: 25px;
-        background: #F6F6F6;
+        background: $bg-thumbs;
         .thumb {
             position: relative;
         }
@@ -44,7 +47,7 @@
             left: 0;
             width: 100%;
             height: 50%;
-            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+            background: $thumb-shadow;
         }
         a {
             text-decoration: none;
@@ -56,93 +59,6 @@
             left: 5px;
             font-size: 18px;
             color: white;
-        }
-    }
-}
-
-@media (max-width: 768px) {
-    .homeBanner {
-        img {
-            height: 150px;
-        }
-        .homeTitle {
-            font-size: 24px;
-        }
-    }
-    .gallery {
-        .thumbs {
-            grid-template-columns: repeat(1, 1fr);
-            gap: 30px;
-            padding: 30px;
-            .thumb {
-                img {
-                    border-radius: 5px;
-                }
-                .overlay {
-                    height: 40%;
-                }
-                h2 {
-                    font-size: 16px;
-                }
-            }
-        }
-    }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-    .homeBanner {
-        img {
-            height: 180px;
-        }
-        .homeTitle {
-            font-size: 34px;
-        }
-    }
-    .gallery {
-        .thumbs {
-            grid-template-columns: repeat(2, 1fr);
-            gap: 40px;
-            padding: 40px;
-            .thumb {
-                img {
-                    border-radius: 8px;
-                }
-                .overlay {
-                    height: 45%;
-                }
-                h2 {
-                    font-size: 18px;
-                }
-            }
-        }
-    }
-}
-
-@media (min-width: 1024px) {
-    .homeBanner {
-        img {
-            height: 200px;
-        }
-        .homeTitle {
-            font-size: 48px;
-        }
-    }
-    .gallery {
-        .thumbs {
-            grid-template-columns: repeat(3, 1fr);
-            gap: 50px;
-            padding: 50px;
-            .thumb {
-                img {
-                    border-radius: 10px;
-                }
-                .overlay {
-                    height: 50%;
-                }
-                h2 {
-                    font-size: 20px;
-                }
-            }
         }
     }
 }

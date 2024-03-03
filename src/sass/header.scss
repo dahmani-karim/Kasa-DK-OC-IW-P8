@@ -1,3 +1,5 @@
+@import './utils/variables.scss';
+
 .header{
     padding: 50px 50px;
     display: flex;
@@ -26,7 +28,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: $medium) {
     .header {
         padding: 30px 30px;
     }
@@ -44,7 +46,7 @@
     }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: $medium) and (max-width: $large) {
     .header {
         padding: 40px 40px;
     }
@@ -58,7 +60,7 @@
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: $large) {
     .header {
         padding: 50px 50px;
     }
