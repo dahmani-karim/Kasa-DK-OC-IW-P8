@@ -22,7 +22,7 @@ const Rate = () => {
     }
 
     return (
-        <div className="rating">
+        <div className="stars">
             {starsFull}
             {starsEmpty}
         </div>

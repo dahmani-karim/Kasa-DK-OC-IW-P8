@@ -43,8 +43,39 @@
     }
 
     .carrousel {
+        .carrouselNav {
+            img {
+                width: 24px;
+            }
+        }
         .pictures {
             max-height: 255px;
+        }
+    }
+
+    .Infos {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .Infos2 {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .services {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        margin: 0 0 40px 0;
+        .block1, .block2 {
+            width: 100%;
+        }
+    }
+
+    .stars {
+        img {
+            width: 20px;
         }
     }
 
@@ -107,6 +138,9 @@
             }
         }
     }
+    .Infos2{
+        flex-direction: column;
+    }
 }
 
 @media (min-width: $large) {
@@ -147,5 +181,8 @@
                 }
             }
         }
+    }
+    .Infos2{
+        flex-direction: column;
     }
 }
