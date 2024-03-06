@@ -5,6 +5,6 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  // base: process.env.NODE_ENV === "production" ? "Kasa-DK-OC-IW-P8" : "/", // This is the subpath of your project, e.g. /Kasa-DK-OC-IW-P8/,
+    base: '/Kasa-DK-OC-IW-P8/'
   // server: {historyApiFallback: true}// This is for the react-router-dom to work properly
 })
