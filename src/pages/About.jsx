@@ -6,7 +6,7 @@ import about from '../data/about.json';
 
 const About = () => {
     return (
-        <div>
+        <div className="about">
             <BannerAbout />
             <AboutContent about={about}/>
         </div>

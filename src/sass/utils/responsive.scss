@@ -19,7 +19,7 @@
 
     .homeBanner {
         img {
-            height: 150px;
+            height: 111px;
         }
         .homeTitle {
             font-size: 24px;
@@ -35,6 +35,29 @@
                     font-size: 16px;
                 }
             }
+        }
+    }
+
+    .home, .about, .details {
+        padding: 0 20px;
+    }
+
+    .carrousel {
+        .pictures {
+            max-height: 255px;
+        }
+    }
+
+    .aboutBanner {
+        img {
+            height: 111px;
+        }
+    }
+
+    .content {
+        padding: 20px 0;
+        h2 {
+            margin: 10px 0;
         }
     }
 
