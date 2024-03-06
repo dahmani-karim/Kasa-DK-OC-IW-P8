@@ -20,9 +20,15 @@
     .homeBanner {
         img {
             height: 111px;
+            border-radius: 10px;
         }
         .homeTitle {
             font-size: 24px;
+            left: 0;
+            transform: translate(0%, -50%);
+            text-align: start;
+            padding: 15px;
+            width: 65%;
         }
     }
     .gallery {
@@ -63,13 +69,17 @@
         justify-content: space-between;
     }
 
-    .services {
+    .InfosSupp {
         display: flex;
         flex-direction: column;
         gap: 0;
         margin: 0 0 40px 0;
-        .block1, .block2 {
+        .dropdown {
             width: 100%;
+            padding: 0;
+            h2 {
+            margin: 10px 0;
+            }
         }
     }
 
@@ -82,19 +92,23 @@
     .aboutBanner {
         img {
             height: 111px;
+            border-radius: 10px;
         }
     }
 
-    .content {
-        padding: 20px 0;
-        h2 {
-            margin: 10px 0;
-        }
-    }
+    // .dropdown {
+    //     padding: 0;
+    //     h2 {
+    //         margin: 10px 0;
+    //     }
+    // }
 
     .footer{
         .mention {
         font-size: 12px;
+        width: 100px;
+        text-align: center;
+        margin-bottom: 50px;
         }
     }
 }

@@ -1,28 +1,22 @@
+.about {
+    padding: 0px 50px;
+}
+
 .aboutBanner {
-    //padding: 0px 50px;
     img {
         width: 100%;
         height: 223px;
         border-radius: 25px;
         object-fit: cover;
+        margin-bottom: 50px;
     }
 }
 
-.content {
-    padding: 50px 100px;
+.dropdown {
+    padding: 0 100px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        li {
-            margin: 10px 0;
-        }
-    }
-    .collapse {
+    .dropdown-toggle {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -30,21 +24,39 @@
         border-radius: 5px;
         padding: 0px 15px;
         color: white;
+        cursor: pointer;
+        z-index: 2;
         h2 {
             font-size: 24px;
             font-weight: 700;
             width: 100%;
         }
-        img {
-            transform: rotate(180deg);
+        .arrow {
+            transition: transform 0.4s ease;
+            &.down {
+                transform: rotate(-180deg);
+            }
         }
     }
-    p{
+    .paragraph{
         font-size: 18px;
         font-weight: 400;
         margin-top: 0;
         padding: 15px;
         background-color: rgba(246, 246, 246, 1);
         border-radius: 5px;
+        transform: translateY(-50px);
+        overflow: hidden;
+        opacity: 0;
+        height: 0;
+        transition: all 0.3s ease-in-out;
+        z-index: -1;
+        &.animate {
+            transform: translateY(0px);
+            height: max-content;
+            margin-bottom: 20px;
+            z-index: 0;
+            opacity: 1;
+          }
     }
 }

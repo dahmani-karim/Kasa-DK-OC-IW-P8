@@ -77,7 +77,6 @@
 
 .Infos2{
     display: flex;
-    //flex-direction: column;
     margin: 20px 0;
     .infosRight{
         display: flex;
@@ -102,37 +101,12 @@
 }
 }
 
-.services{
+.InfosSupp{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    margin: 0 50px 50px 50px;
     gap: 100px;
-    h3{
-        display: flex;
-        flex-direction: column;
-        background-color: #FF6060;
-        border-radius: 5px;
-        color: white;
-        font-size: 18px;
-        font-weight: 700;
-        padding: 10px;
-        margin-bottom: 0;
-        cursor: pointer;
-    }
-    .block1, .block2{
+    .dropdown {
+        padding:0;
         width: 50%;
     }
-    .service{
-        margin: 0;
-        background-color: rgba(246, 246, 246, 1);
-        border-radius: 5px;
-    }
-    p{
-        font-size: 18px;
-        font-weight: 500;
-        margin:0;
-        padding: 10px;
-        //transform: translate(0px, -10px);
-    };
 }

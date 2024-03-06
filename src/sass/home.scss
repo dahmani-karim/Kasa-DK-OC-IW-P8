@@ -1,5 +1,9 @@
 @import "./utils/variables.scss";
 
+.home {
+    padding: 0 50px;
+}
+
 .homeBanner {
     position : relative;
     text-align: center;
@@ -20,11 +24,6 @@
         transform: translate(-50%, -50%);
         color: white;
     }
-}
-
-
-.home {
-    padding: 0 50px;
 }
 
 .gallery {

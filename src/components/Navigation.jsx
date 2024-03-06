@@ -4,8 +4,8 @@ const Navigation = () => {
     return (
         <nav className='nav'>
             <ul>
-                <li><NavLink to="/">Accueil</NavLink></li>
-                <li><NavLink to='/About'>A Propos</NavLink></li>
+                <li><NavLink to="/">ACCUEIL</NavLink></li>
+                <li><NavLink to='/About'>A PROPOS</NavLink></li>
             </ul>
         </nav>
     );
