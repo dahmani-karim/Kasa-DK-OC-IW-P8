@@ -30,15 +30,21 @@ const Carrousel = () => {
         setIndicator((prevIndex) => (prevIndex === totalPictures ? 1 : prevIndex + 1));
     };
 
+    const showArrowAndIndicator = totalPictures > 1;
+
     return (
         <div className='carrousel' key={logement.id}>
-            <div className="carrouselNav">
+            {showArrowAndIndicator && (
+                <div className="carrouselNav">
                 <img className='arrow arrowLeft' src={arrowLeft} alt="Flèche gauche" onClick={slideLeft}/>
                 <img className='arrow arrowRight' src={arrowRight} alt="Flèche droite" onClick={slideRight}/>
             </div>
+            )}
+            {showArrowAndIndicator && (
             <div className="slide-indicator">
                         {`${indicator}/${totalPictures}`}
             </div>
+            )}
             <img className='pictures' src={portfolio[indicator-1]} alt="Photos du logement" />
         </div>
     );
