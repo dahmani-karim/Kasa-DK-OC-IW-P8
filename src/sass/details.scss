@@ -63,17 +63,21 @@
     .tags{
         display: flex;
         flex-direction: row;
+        margin-bottom: 20px;
         p{
             display: flex;
+            justify-content: center;
             align-items: center;
             font-size: 14px;
             font-weight: 700;
             color: white;
             text-align: center;
-            padding: 3px 25px;
+            padding: 0 3px;
             margin: 5px;
             background-color: #FF6060;
-            border-radius: 5px;
+            border-radius: 10px;
+            width: 115px;
+            min-height: 25px;
         }
 }
 
