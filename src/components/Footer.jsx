@@ -1,6 +1,7 @@
 //Footer component
 
 import { Link } from 'react-router-dom';
+import logoFooter from '../assets/logo/logowhite.png';
 
 const Footer = () => {
     const scrollToTop = () => {
@@ -10,7 +11,7 @@ const Footer = () => {
     return (
         <footer className='footer'>
             <Link to="/"  onClick={scrollToTop}>
-                <img className='logoFooter' src="/src/assets/logo/logowhite.png" alt="Logo Kasa blanc" />
+                <img className='logoFooter' src={logoFooter} alt="Logo Kasa blanc" />
             </Link>
             <p className='mention'>© 2020 Kasa. All rights reserved</p>
         </footer>
