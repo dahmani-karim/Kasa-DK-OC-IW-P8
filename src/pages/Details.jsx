@@ -1,6 +1,7 @@
 //Details of lodging
 
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
 import Carrousel from "../components/Carrousel";
 import Infos from "../components/Infos";
 import DropdownMenu from "../components/Collapse";
@@ -10,6 +11,18 @@ const Details = () => {
 
     const { id } = useParams();
     const logement = logements.find((logement) => logement.id === id);
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        if (!logement) {
+          navigate("/error");
+        }
+        }, [id, logement, navigate]
+    ); // Vérifiez si location est défini avant d'accéder à ses propriétés
+        
+    if (!logement) {
+        return null; // Ou affichez un composant d'erreur approprié
+    }
 
     return (
         <div className="details">
