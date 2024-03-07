@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './main.scss';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -9,9 +9,11 @@ import About from './pages/About';
 import Error from './pages/Error';
 import Details from './pages/Details';
 
+const basename = import.meta.env.MODE === "production" ? "/Kasa-DK-OC-IW-P8" : "";
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-      <Router>
+      <BrowserRouter basename={basename}>
         <Header />
         <Routes>
             <Route path='/' element={<Home />} />
@@ -20,6 +22,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
             <Route path='/details/:id' element={<Details />} />
         </Routes>
         <Footer />
-      </Router>
+      </BrowserRouter>
   </React.StrictMode>
 )
