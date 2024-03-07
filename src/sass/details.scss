@@ -19,16 +19,14 @@
     .carrouselNav{
         .arrowLeft{
             position: absolute;
-            top: 50%;
+            top: 147.5px;
             left: 0;
-            translate: 0 -50%;
             cursor: pointer;
         }
         .arrowRight{
             position: absolute;
-            top: 50%;
+            top: 147.5px;
             right: 0;
-            translate: 0 -50%;
             cursor: pointer;
         }
     }
@@ -51,7 +49,7 @@
         font-weight: 500;
         width: 93px;
         color: #FF6060;
-        text-wrap: wrap;
+        word-wrap: break-word;
         text-align: right;
         margin-right: 10px;
     }
@@ -92,7 +90,6 @@
     .rating{
         display: flex;
         flex-direction: row;
-        align-items: right;
         margin: 20px 0;
         img {
             padding: 0 5px;
