@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './main.scss';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -13,7 +13,7 @@ const basename = import.meta.env.MODE === "production" ? "/Kasa-DK-OC-IW-P8" : "
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-      <HashRouter basename={basename}>
+      <BrowserRouter basename={basename}>
         <Header />
         <Routes>
             <Route path='/' element={<Home />} />
@@ -22,6 +22,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
             <Route path='/details/:id' element={<Details />} />
         </Routes>
         <Footer />
-      </HashRouter>
+      </BrowserRouter>
   </React.StrictMode>
 )
